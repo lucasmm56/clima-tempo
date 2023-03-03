@@ -5,7 +5,7 @@ function findCity(){
     let xhr = new XMLHttpRequest();
     xhr.open('GET', `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}`, true);
     xhr.onload = function(){
-        
+
         switch(xhr.status){
             case 200:
             let data = JSON.parse(xhr.responseText);
@@ -45,16 +45,16 @@ function validateWeatherIcon(data){
 
     switch(data['weather'][0]['main']){
         case 'Clouds':
-            document.querySelector('img').src = '/img/clouds-fill.svg';
+            document.querySelector('img').src = '../img/clouds-fill.svg';
         break;
         case 'Clear':
-            document.querySelector('img').src = '/img/brightness-high-fill.svg';
+            document.querySelector('img').src = '../img/brightness-high-fill.svg';
         break;
         case 'Rain':
-            document.querySelector('img').src = '/img/cloud-drizzle-fill.svg';
+            document.querySelector('img').src = '../img/cloud-drizzle-fill.svg';
         break;
         default:
-            document.querySelector('img').src = '/img/back-ground.svg';
+            document.querySelector('img').src = '../img/back-ground.svg';
         break;
     }
 }
