@@ -10,22 +10,43 @@
 
 <body>
     <header>
-        <h1>Olá mundo</h1>
+        <h1>Clima Tempo</h1>
     </header>
     <main>
         <article>
             <figure>
-                <img src="img/brightness-high-fill.svg" alt="sun-icon">
-                <figcaption>Um gatinho preto e branco.</figcaption>
+                <img src="img/back-ground.svg" alt="sun-icon">
+                <figcaption></figcaption>
             </figure>
         </article>
+            <h2 id="temperature">°C</h2>
         <aside>
-            <p>Olá mundo</p>
-            <p>Olá mundo</p>
+            <div class="items-grid">
+                <p id="temp_min"></p>
+                <small>Temp_min</small>
+            </div>
+            <div class="items-grid">
+                <p id="temp_max"></p>
+                <small>Temp_max</small>
+            </div>
+            <div class="items-grid">
+                <p id="umidade"></p>
+                <small>Umidade Ar</small>
+            </div>
+            <div class="items-grid">
+                <p id="vento"></p>
+                <small>Veloc. vento</small>
+            </div>
         </aside>
+        <form>
+            <input type="text" class="input-icon" id="city">
+            <button type="button" onclick="findCity()">Buscar</button>
+        </form>
     </main>
     <footer>
-
+      <p>Developed by <a href="https://github.com/lucasmm56">Lucas Martins</a></p>
+      <p>&copy; 2023</p> 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

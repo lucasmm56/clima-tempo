@@ -9,11 +9,18 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to right, #af9a21, #36bba6);
+    color: white;
+    font-weight: bold;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+figure img{
+    width: 100%;
+    height: 100%;
 }
 
 figure{
@@ -21,9 +28,57 @@ figure{
     flex-direction: column;
     align-items: center;
 }
+main h2{
+    padding: 0.5em 0;
+}
 aside{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2em;
+    padding: 0.5em 0;
+}
+form{
     display: flex;
-    flex-direction: row;
-    grid-gap: 3em;
-    padding: 3em 0;
+    flex-direction: column;
+    align-items: center;
+}
+.items-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+small{
+    padding: 0.2em 0;
+    /* letter-spacing: 0.1em; */
+}
+input{
+    text-align: center;
+    margin: 0.5em 0;
+    padding: 0.2em 0;
+    font-weight: bold;
+}
+button{
+    padding: 0.3em 0.3em;
+    border-radius: 0.2em;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+button:hover{
+    padding: 0.2em 0.2em;
+    border: 0.1em solid white;
+    background-color: rgb(45, 121, 242);;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+footer a{
+    color: white;
 }
